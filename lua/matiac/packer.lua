@@ -21,7 +21,10 @@ return require('packer').startup(function(use)
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = {
+            {'nvim-lua/plenary.nvim'},
+            {'sharkdp/fd'},
+        }
     }
 
     use {
@@ -83,6 +86,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('nvim-treesitter/nvim-treesitter-context')
     use('jwalton512/vim-blade')
+    use('github/copilot.vim')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
